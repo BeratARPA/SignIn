@@ -22,7 +22,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 500px;
+  height: 575px;
   width: 500px;
   background-color: white;
   border-radius: 30px;
@@ -36,14 +36,31 @@ body {
   object-fit: cover;
 }
 
+.custom-password i {
+  position: relative;
+  bottom: 33px;
+  left: 92%;
+}
+
+.custom-checkbox {
+  display: grid;
+  grid-template-columns: 30px auto;
+  height: 25px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
 .form-container input {
-  margin: 5px 0 5px 0;
+  margin: 5px 0 5px;
   width: 100%;
   padding: 10px;
-  padding-right: 40px;
   border: 2px solid #ddd;
   border-radius: 10px;
   outline: none;
+}
+
+.form-container input:focus {
+  outline: slategray solid 1px;
 }
 
 .form-container h1 {

@@ -18,15 +18,26 @@
     <div class="container">
       <div class="form-container">
         <form>
-          <img
-            src="https://img.freepik.com/free-photo/natures-beauty-reflected-tranquil-mountain-waters-generative-ai_188544-7867.jpg?w=996&t=st=1716852850~exp=1716853450~hmac=782ed542ff30b7bba77b37f818be7d107f8cbcb316bc40a15512d1fea5b9b650"
-          />
+          <img src="PageImage.jpg" />
           <h1>Sign In</h1>
           <input type="text" placeholder="Username" />
-          <input type="password" placeholder="Password" />
+          <div class="custom-password">
+            <input type="password" placeholder="Password" id="password" />
+            <i
+              onclick="toggleShowHide()"
+              class="fa fa-eye"
+              id="togglePassword"
+            ></i>
+          </div>
+          <div class="custom-checkbox">
+            <input type="checkbox" />
+            <label>Remember me</label>
+          </div>
           <button class="btn">Sign In</button>
         </form>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
