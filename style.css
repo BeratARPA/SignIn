@@ -22,36 +22,30 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
-  height: 575px;
+  height: 550px;
   width: 500px;
   background-color: white;
   border-radius: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 15px gray;
+}
+
+.form-container h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-weight: 500;
 }
 
 .form-container img {
+  display: flex;
   width: 100%;
   height: 50%;
   border-radius: 20px;
   object-fit: cover;
 }
 
-.custom-password i {
-  position: relative;
-  bottom: 33px;
-  left: 92%;
-}
-
-.custom-checkbox {
-  display: grid;
-  grid-template-columns: 30px auto;
-  height: 25px;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
 .form-container input {
-  margin: 5px 0 5px;
+  margin-top: 10px;
   width: 100%;
   padding: 10px;
   border: 2px solid #ddd;
@@ -63,25 +57,29 @@ body {
   outline: slategray solid 1px;
 }
 
-.form-container h1 {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  font-weight: 500;
-}
-
-.btn {
-  width: 100%;
-  border: none;
-  padding: 10px;
+.form-button {
+  margin-top: 30px;
   background-color: #77b7cd;
   color: #fff;
+  width: 100%;
+  padding: 10px;
   border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: all 0.3s ease;
+  border: none;
 }
 
-.btn:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+.form-button:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px grey;
+}
+
+.custom-password i {
+  position: relative;
+  bottom: 30px;
+  left: 92%;
+}
+
+.custom-checkbox {
+  display: grid;
+  grid-template-columns: 30px auto;
+  align-items: baseline; 
 }
